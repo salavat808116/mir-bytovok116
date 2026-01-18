@@ -1,0 +1,11 @@
+# Правила для поисковых роботов
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mir-bytovok.ru/sitemap.xml
+
+# Запрещаем индексацию служебных файлов
+Disallow: /api/
+Disallow: /_next/
