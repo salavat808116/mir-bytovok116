@@ -52,10 +52,10 @@ export default function Header() {
           {/* Контактная информация и CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="tel:+78432000000"
+              href="tel:+79179098884"
               className="text-primary-600 font-bold text-lg hover:text-primary-700"
             >
-              +7 (843) 200-00-00
+              +7 (917) 909-88-84
             </a>
             <button className="btn-primary text-sm">
               Заказать звонок
@@ -104,7 +104,7 @@ export default function Header() {
                 href="tel:+78432000000"
                 className="text-primary-600 font-bold text-lg py-2"
               >
-                +7 (843) 200-00-00
+                +7 (917) 909-88-84
               </a>
               <button className="btn-primary w-full">
                 Заказать звонок
