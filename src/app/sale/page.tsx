@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Продажа бытовок в Казани – Купить бытовку от производителя | Мир бытовок',
-  description: 'Купить бытовку в Казани по выгодной цене от производителя. Большой выбор готовых решений. Рассрочка. Доставка и установка.',
-  keywords: 'купить бытовку Казань, продажа бытовок, цена бытовки, бытовки в наличии',
+  title: 'Продажа бытовок – Купить бытовку от производителя | Мир бытовок',
+  description: 'Купить бытовку по выгодной цене от производителя. Большой выбор готовых решений. Рассрочка. Доставка и установка по всей России.',
+  keywords: 'купить бытовку, продажа бытовок, цена бытовки, бытовки в наличии, блок-контейнеры',
 }
 
 /**
@@ -58,7 +58,7 @@ export default function SalePage() {
 
   const advantages = [
     'Гарантия 3 года на конструкцию',
-    'Бесплатная доставка по Казани',
+    'Доставка по России',
     'Установка манипулятором',
     'Рассрочка 0% на 6 месяцев',
     'Возможность обмена',
@@ -72,7 +72,7 @@ export default function SalePage() {
         <div className="container-custom">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Продажа бытовок в Казани
+              Продажа бытовок
             </h1>
             <p className="text-xl text-industrial-100 mb-8">
               Купите бытовку напрямую от производителя. Цены без посредников. 
@@ -82,8 +82,8 @@ export default function SalePage() {
               <a href="#catalog" className="btn-accent">
                 Смотреть каталог
               </a>
-              <a href="tel:+78432000000" className="btn-secondary">
-                +7 (843) 200-00-00
+              <a href="tel:+79179098884" className="btn-secondary">
+                +7 917 909-88-84
               </a>
             </div>
           </div>
@@ -185,8 +185,8 @@ export default function SalePage() {
                 <a href="#contact-form" className="btn-accent">
                   Узнать условия
                 </a>
-                <a href="tel:+78432000000" className="bg-white text-primary-600 font-semibold py-3 px-6 rounded-lg hover:bg-industrial-50 transition-all">
-                  +7 (843) 200-00-00
+                <a href="tel:+79179098884" className="bg-white text-primary-600 font-semibold py-3 px-6 rounded-lg hover:bg-industrial-50 transition-all">
+                  +7 917 909-88-84
                 </a>
               </div>
             </div>

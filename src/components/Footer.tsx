@@ -14,14 +14,11 @@ export default function Footer() {
           {/* О компании */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">МБ</span>
-              </div>
-              <span className="text-xl font-bold">Мир бытовок</span>
+              <img src="/logo.svg" alt="Мир бытовок" className="h-10 w-auto brightness-0 invert" />
             </div>
             <p className="text-industrial-300 text-sm">
-              Производство, продажа и аренда бытовок в Казани и Республике Татарстан. 
-              Собственное производство. Доставка день в день.
+              Производство, продажа и аренда бытовок. 
+              Собственное производство. Доставка по всей России.
             </p>
           </div>
 
@@ -80,10 +77,10 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="tel:+78432000000"
-                  className="text-primary-400 hover:text-primary-300 font-bold text-lg transition-colors"
+                  href="tel:+79179098884"
+                  className="text-primary-400 hover:text-primary-300 font-bold text-lg transition-colors whitespace-nowrap"
                 >
-                  +7 (843) 200-00-00
+                  +7 917 909-88-84
                 </a>
               </li>
               <li>
@@ -95,7 +92,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="text-industrial-300 text-sm">
-                г. Казань, Республика Татарстан
+                Работаем по всей России
               </li>
               <li className="text-industrial-300 text-sm">
                 Пн-Пт: 8:00 - 20:00<br />

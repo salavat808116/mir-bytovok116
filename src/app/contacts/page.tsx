@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Контакты – Связаться с нами | Мир бытовок Казань',
-  description: 'Контакты компании Мир бытовок в Казани. Телефон, email, адрес. Позвоните нам или оставьте заявку на сайте.',
-  keywords: 'контакты Мир бытовок, телефон, адрес Казань, связаться',
+  title: 'Контакты – Связаться с нами | Мир бытовок',
+  description: 'Контакты компании Мир бытовок. Телефон, email. Позвоните нам или оставьте заявку на сайте.',
+  keywords: 'контакты Мир бытовок, телефон, связаться, заказать бытовку',
 }
 
 /**
@@ -20,9 +20,9 @@ export default function ContactsPage() {
     {
       title: 'Телефон',
       items: [
-        { label: 'Основной', value: '+7 (843) 200-00-00', link: 'tel:+78432000000' },
-        { label: 'Отдел продаж', value: '+7 (843) 200-00-01', link: 'tel:+78432000001' },
-        { label: 'WhatsApp', value: '+7 (843) 200-00-00', link: 'https://wa.me/78432000000' }
+        { label: 'Основной', value: '+7 917 909-88-84', link: 'tel:+79179098884' },
+        { label: 'Отдел продаж', value: '+7 917 909-88-84', link: 'tel:+79179098884' },
+        { label: 'WhatsApp', value: '+7 917 909-88-84', link: 'https://wa.me/79179098884' }
       ],
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -45,7 +45,7 @@ export default function ContactsPage() {
     {
       title: 'Адрес',
       items: [
-        { label: 'Офис и производство', value: 'г. Казань, Республика Татарстан' },
+        { label: 'Режим работы', value: 'Пн-Пт: 8:00-20:00, Сб-Вс: 9:00-18:00' },
         { label: 'Режим работы', value: 'Пн-Пт: 8:00 - 20:00, Сб-Вс: 9:00 - 18:00' }
       ],
       icon: (
@@ -61,25 +61,25 @@ export default function ContactsPage() {
     {
       name: 'Отдел продаж',
       description: 'Консультации по продаже бытовок, расчет стоимости, оформление заказа',
-      phone: '+7 (843) 200-00-01',
+      phone: '+7 917 909-88-84',
       email: 'sales@mir-bytovok.ru'
     },
     {
       name: 'Отдел аренды',
       description: 'Аренда бытовок, условия, тарифы, бронирование',
-      phone: '+7 (843) 200-00-02',
+      phone: '+7 917 909-88-84',
       email: 'rent@mir-bytovok.ru'
     },
     {
       name: 'Производство',
       description: 'Вопросы по изготовлению, индивидуальные проекты, сроки',
-      phone: '+7 (843) 200-00-03',
+      phone: '+7 917 909-88-84',
       email: 'production@mir-bytovok.ru'
     },
     {
       name: 'Служба доставки',
       description: 'Доставка, аренда манипулятора, установка бытовок',
-      phone: '+7 (843) 200-00-04',
+      phone: '+7 917 909-88-84',
       email: 'delivery@mir-bytovok.ru'
     }
   ]
@@ -140,10 +140,10 @@ export default function ContactsPage() {
               Звоните прямо сейчас!
             </h3>
             <a
-              href="tel:+78432000000"
+              href="tel:+79179098884"
               className="text-4xl md:text-5xl font-bold text-primary-600 hover:text-primary-700 transition-colors inline-block mb-4"
             >
-              +7 (843) 200-00-00
+              +7 917 909-88-84
             </a>
             <p className="text-industrial-600">
               Работаем без выходных. Ответим на все ваши вопросы.
@@ -205,7 +205,7 @@ export default function ContactsPage() {
             Как нас найти
           </h2>
           <p className="text-center text-industrial-600 mb-12">
-            Наш офис и производство находятся в Казани
+            Свяжитесь с нами удобным способом
           </p>
 
           {/* Placeholder для карты */}
@@ -218,7 +218,7 @@ export default function ContactsPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                   <p className="text-industrial-600">
-                    г. Казань, Республика Татарстан
+                    Работаем по всей России
                   </p>
                   <p className="text-sm text-industrial-500 mt-2">
                     Интеграция с картами (Яндекс.Карты / 2GIS)

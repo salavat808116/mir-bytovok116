@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Производство бытовок в Казани – Собственное производство | Мир бытовок',
-  description: 'Производство бытовок на собственной базе в Казани. Изготовим бытовку любого размера и конфигурации. Качественные материалы. Гарантия.',
-  keywords: 'производство бытовок Казань, изготовление бытовок, заказать бытовку, производитель бытовок',
+  title: 'Производство бытовок – Собственное производство | Мир бытовок',
+  description: 'Производство бытовок на собственной производственной базе. Изготовим бытовку любого размера и конфигурации. Качественные материалы. Гарантия.',
+  keywords: 'производство бытовок, изготовление бытовок, заказать бытовку, производитель бытовок, блок-контейнеры',
 }
 
 /**
@@ -61,7 +61,7 @@ export default function ProductionPage() {
         <div className="container-custom">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Производство бытовок в Казани
+              Производство бытовок
             </h1>
             <p className="text-xl text-industrial-100 mb-8">
               Собственная производственная база. Изготавливаем бытовки любой конфигурации 
@@ -71,8 +71,8 @@ export default function ProductionPage() {
               <a href="#contact-form" className="btn-accent">
                 Заказать производство
               </a>
-              <a href="tel:+78432000000" className="btn-secondary">
-                +7 (843) 200-00-00
+              <a href="tel:+79179098884" className="btn-secondary">
+                +7 917 909-88-84
               </a>
             </div>
           </div>
@@ -173,7 +173,7 @@ export default function ProductionPage() {
             <a href="#contact-form" className="btn-accent">
               Обсудить проект
             </a>
-            <a href="tel:+78432000000" className="bg-white text-primary-600 font-semibold py-3 px-6 rounded-lg hover:bg-industrial-50 transition-all">
+            <a href="tel:+79179098884" className="bg-white text-primary-600 font-semibold py-3 px-6 rounded-lg hover:bg-industrial-50 transition-all">
               Позвонить сейчас
             </a>
           </div>

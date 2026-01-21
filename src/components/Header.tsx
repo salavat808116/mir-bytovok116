@@ -26,14 +26,8 @@ export default function Header() {
       <div className="container-custom">
         <div className="flex justify-between items-center py-4 px-4">
           {/* Логотип */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">МБ</span>
-            </div>
-            <div className="hidden md:block">
-              <div className="text-xl font-bold text-industrial-900">Мир бытовок</div>
-              <div className="text-xs text-industrial-600">Казань и Республика Татарстан</div>
-            </div>
+          <Link href="/" className="flex items-center space-x-3">
+            <img src="/logo.svg" alt="Мир бытовок" className="h-12 w-auto" />
           </Link>
 
           {/* Навигация для десктопа */}
@@ -53,11 +47,11 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-4">
             <a
               href="tel:+79179098884"
-              className="text-primary-600 font-bold text-lg hover:text-primary-700"
+              className="text-primary-600 font-bold text-lg hover:text-primary-700 whitespace-nowrap"
             >
-              +7 (917) 909-88-84
+              +7 917 909-88-84
             </a>
-            <button className="btn-primary text-sm">
+            <button className="btn-primary text-sm whitespace-nowrap">
               Заказать звонок
             </button>
           </div>
@@ -101,10 +95,10 @@ export default function Header() {
                 </Link>
               ))}
               <a
-                href="tel:+78432000000"
+                href="tel:+79179098884"
                 className="text-primary-600 font-bold text-lg py-2"
               >
-                +7 (917) 909-88-84
+                +7 917 909-88-84
               </a>
               <button className="btn-primary w-full">
                 Заказать звонок

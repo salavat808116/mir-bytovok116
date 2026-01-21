@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Аренда бытовок в Казани – Выгодные условия | Мир бытовок',
-  description: 'Аренда бытовок в Казани на любой срок. Доставка день в день. Выгодные тарифы. Бытовки для проживания, офиса, склада.',
-  keywords: 'аренда бытовок Казань, снять бытовку, аренда бытовок цена, бытовки на стройку',
+  title: 'Аренда бытовок – Выгодные условия | Мир бытовок',
+  description: 'Аренда бытовок на любой срок. Быстрая доставка. Выгодные тарифы. Бытовки для проживания, офиса, склада.',
+  keywords: 'аренда бытовок, снять бытовку, аренда бытовок цена, бытовки на стройку, аренда вагончиков',
 }
 
 /**
@@ -92,7 +92,7 @@ export default function RentPage() {
         <div className="container-custom">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Аренда бытовок в Казани
+              Аренда бытовок
             </h1>
             <p className="text-xl text-industrial-100 mb-8">
               Сдаем в аренду бытовки на любой срок – от 1 дня до нескольких лет. 
@@ -102,8 +102,8 @@ export default function RentPage() {
               <a href="#contact-form" className="btn-accent">
                 Рассчитать стоимость
               </a>
-              <a href="tel:+78432000000" className="btn-secondary">
-                +7 (843) 200-00-00
+              <a href="tel:+79179098884" className="btn-secondary">
+                +7 917 909-88-84
               </a>
             </div>
           </div>
@@ -202,7 +202,7 @@ export default function RentPage() {
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">•</span>
-                  <span>Доставка по Казани</span>
+                  <span>Доставка (до 50 км)</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary-600 mr-2">•</span>
@@ -229,7 +229,7 @@ export default function RentPage() {
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <span className="text-industrial-600 mr-2">•</span>
-                  <span>Доставка за пределы Казани (по тарифу)</span>
+                  <span>Доставка на дальние расстояния (по тарифу)</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-industrial-600 mr-2">•</span>
@@ -262,8 +262,8 @@ export default function RentPage() {
             <a href="#contact-form" className="btn-accent">
               Оставить заявку
             </a>
-            <a href="tel:+78432000000" className="bg-white text-primary-600 font-semibold py-3 px-6 rounded-lg hover:bg-industrial-50 transition-all">
-              +7 (843) 200-00-00
+            <a href="tel:+79179098884" className="bg-white text-primary-600 font-semibold py-3 px-6 rounded-lg hover:bg-industrial-50 transition-all">
+              +7 917 909-88-84
             </a>
           </div>
         </div>

@@ -252,8 +252,8 @@ export default function ApplicationsPage() {
             <a href="#contact-form" className="btn-accent">
               Обсудить проект
             </a>
-            <a href="tel:+78432000000" className="bg-white text-primary-600 font-semibold py-3 px-6 rounded-lg hover:bg-industrial-50 transition-all">
-              +7 (843) 200-00-00
+            <a href="tel:+79179098884" className="bg-white text-primary-600 font-semibold py-3 px-6 rounded-lg hover:bg-industrial-50 transition-all">
+              +7 917 909-88-84
             </a>
           </div>
         </div>

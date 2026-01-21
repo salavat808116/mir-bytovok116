@@ -23,7 +23,7 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Основной заголовок */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Производство, продажа и аренда бытовок в Казани
+            Производство, продажа и аренда бытовок
           </h1>
 
           {/* Подзаголовок */}
@@ -37,7 +37,7 @@ export default function Hero() {
               <svg className="w-5 h-5 text-accent-orange" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Работаем по РТ</span>
+              <span>Собственное производство</span>
             </div>
             <div className="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
               <svg className="w-5 h-5 text-accent-orange" fill="currentColor" viewBox="0 0 20 20">
@@ -49,7 +49,7 @@ export default function Hero() {
               <svg className="w-5 h-5 text-accent-orange" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Выгодные цены</span>
+              <span>Доставка по всей России</span>
             </div>
           </div>
 
@@ -62,20 +62,20 @@ export default function Hero() {
               Рассчитать стоимость
             </button>
             <a
-              href="tel:+78432000000"
-              className="btn-secondary text-lg w-full sm:w-auto"
+              href="tel:+79179098884"
+              className="btn-secondary text-lg w-full sm:w-auto whitespace-nowrap"
             >
-              Заказать звонок
+              +7 917 909-88-84
             </a>
           </div>
 
           {/* Быстрый контакт */}
           <div className="mt-8">
             <a
-              href="tel:+78432000000"
+              href="tel:+79179098884"
               className="text-2xl md:text-3xl font-bold hover:text-primary-300 transition-colors inline-block"
             >
-              +7 (843) 200-00-00
+              +7 917 909-88-84
             </a>
             <p className="text-industrial-200 mt-2">
               Звоните прямо сейчас! Работаем без выходных

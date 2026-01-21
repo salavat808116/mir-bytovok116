@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Аренда манипулятора в Казани – Услуги манипулятора | Мир бытовок',
-  description: 'Аренда манипулятора в Казани для доставки и установки бытовок, контейнеров, грузов. Опытные операторы. Работаем без выходных.',
-  keywords: 'аренда манипулятора Казань, манипулятор услуги, доставка манипулятором, манипулятор цена',
+  title: 'Аренда манипулятора – Услуги манипулятора | Мир бытовок',
+  description: 'Аренда манипулятора для доставки и установки бытовок, контейнеров, грузов. Опытные операторы. Работаем без выходных.',
+  keywords: 'аренда манипулятора, манипулятор услуги, доставка манипулятором, манипулятор цена, кран-манипулятор',
 }
 
 /**
@@ -74,7 +74,7 @@ export default function ManipulatorPage() {
       price: 'от 1 500 ₽'
     },
     {
-      service: 'Доставка бытовки по Казани',
+      service: 'Доставка бытовки (до 50 км)',
       price: 'от 5 000 ₽'
     },
     {
@@ -82,7 +82,7 @@ export default function ManipulatorPage() {
       price: 'от 2 000 ₽'
     },
     {
-      service: 'Выезд за пределы Казани',
+      service: 'Доставка на дальние расстояния (от 50 км)',
       price: 'от 50 ₽/км'
     }
   ]
@@ -94,7 +94,7 @@ export default function ManipulatorPage() {
         <div className="container-custom">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Аренда манипулятора в Казани
+              Аренда манипулятора
             </h1>
             <p className="text-xl text-industrial-100 mb-8">
               Предоставляем услуги манипулятора для доставки и установки бытовок, 
@@ -105,8 +105,8 @@ export default function ManipulatorPage() {
               <a href="#contact-form" className="btn-accent">
                 Заказать манипулятор
               </a>
-              <a href="tel:+78432000000" className="btn-secondary">
-                +7 (843) 200-00-00
+              <a href="tel:+79179098884" className="btn-secondary">
+                +7 917 909-88-84
               </a>
             </div>
           </div>
@@ -290,8 +290,8 @@ export default function ManipulatorPage() {
             Звоните! Манипулятор может быть на вашем объекте уже через 2-3 часа
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="tel:+78432000000" className="btn-accent text-lg">
-              Позвонить: +7 (843) 200-00-00
+            <a href="tel:+79179098884" className="btn-accent text-lg">
+              Позвонить: +7 917 909-88-84
             </a>
             <a href="#contact-form" className="bg-white text-primary-600 font-semibold py-3 px-6 rounded-lg hover:bg-industrial-50 transition-all text-lg">
               Заказать онлайн
