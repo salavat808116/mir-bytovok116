@@ -2,6 +2,7 @@ import Hero from '@/components/Hero'
 import TrustBadges from '@/components/TrustBadges'
 import Advantages from '@/components/Advantages'
 import Stats from '@/components/Stats'
+import RentSection from '@/components/RentSection'
 import BytovkiTypes from '@/components/BytovkiTypes'
 import Portfolio from '@/components/Portfolio'
 import Services from '@/components/Services'
@@ -24,6 +25,9 @@ export default function Home() {
       
       {/* Счетчики достижений */}
       <Stats />
+      
+      {/* Аренда бытовок */}
+      <RentSection />
       
       {/* Блок с видами бытовок */}
       <BytovkiTypes />
