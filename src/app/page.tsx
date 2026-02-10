@@ -6,8 +6,6 @@ import BytovkiTypes from '@/components/BytovkiTypes'
 import Services from '@/components/Services'
 import HowWeWork from '@/components/HowWeWork'
 import PriceList from '@/components/PriceList'
-import Gallery from '@/components/Gallery'
-import Testimonials from '@/components/Testimonials'
 import FAQ from '@/components/FAQ'
 import ContactForm from '@/components/ContactForm'
 
@@ -41,12 +39,6 @@ export default function Home() {
       
       {/* Как мы работаем */}
       <HowWeWork />
-      
-      {/* Галерея работ */}
-      <Gallery />
-      
-      {/* Отзывы клиентов */}
-      <Testimonials />
       
       {/* Часто задаваемые вопросы */}
       <FAQ />

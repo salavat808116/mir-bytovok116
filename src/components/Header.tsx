@@ -14,29 +14,27 @@ export default function Header() {
     { href: '/', label: 'Главная' },
     { href: '/production', label: 'Производство' },
     { href: '/sale', label: 'Продажа' },
-    { href: '/rent', label: 'Аренда бытовок' },
-    { href: '/manipulator', label: 'Аренда манипулятора' },
-    { href: '/applications', label: 'Применение' },
-    { href: '/about', label: 'О компании' },
+    { href: '/rent', label: 'Аренда' },
+    { href: '/about', label: 'О нас' },
     { href: '/contacts', label: 'Контакты' },
   ]
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="bg-white shadow-sm sticky top-0 z-50 border-b border-industrial-100">
       <div className="container-custom">
-        <div className="flex justify-between items-center py-4 px-4">
+        <div className="flex justify-between items-center py-3 px-4">
           {/* Логотип */}
-          <Link href="/" className="flex items-center space-x-3">
-            <img src="/logo.svg" alt="Мир бытовок" className="h-12 w-auto" />
+          <Link href="/" className="flex items-center">
+            <img src="/logo.svg" alt="Мир бытовок" className="h-10 w-auto" />
           </Link>
 
           {/* Навигация для десктопа */}
-          <nav className="hidden lg:flex space-x-6">
+          <nav className="hidden lg:flex items-center space-x-8">
             {navigationLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-industrial-700 hover:text-primary-600 transition-colors duration-200 font-medium"
+                className="text-industrial-700 hover:text-primary-600 transition-colors duration-200 font-medium text-sm"
               >
                 {link.label}
               </Link>
@@ -47,13 +45,16 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-4">
             <a
               href="tel:+79179098884"
-              className="text-primary-600 font-bold text-lg hover:text-primary-700 whitespace-nowrap"
+              className="text-primary-600 font-bold text-base hover:text-primary-700 whitespace-nowrap"
             >
               +7 917 909-88-84
             </a>
-            <button className="btn-primary text-sm whitespace-nowrap">
+            <a 
+              href="#contact-form"
+              className="btn-primary text-sm whitespace-nowrap px-4 py-2"
+            >
               Заказать звонок
-            </button>
+            </a>
           </div>
 
           {/* Мобильное меню - кнопка */}
@@ -100,9 +101,13 @@ export default function Header() {
               >
                 +7 917 909-88-84
               </a>
-              <button className="btn-primary w-full">
+              <a 
+                href="#contact-form"
+                className="btn-primary w-full block text-center"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Заказать звонок
-              </button>
+              </a>
             </div>
           </nav>
         )}

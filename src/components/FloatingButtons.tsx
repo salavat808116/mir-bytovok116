@@ -7,7 +7,6 @@
 export default function FloatingButtons() {
   const phoneNumber = '+79179098884'
   const whatsappNumber = '79179098884'
-  const telegramUsername = 'mirbytovok' // Замените на реальный username
 
   return (
     <>
@@ -45,7 +44,7 @@ export default function FloatingButtons() {
 
       {/* Кнопка Telegram */}
       <a
-        href={`https://t.me/${telegramUsername}`}
+        href={`https://t.me/${whatsappNumber}`}
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-40 right-6 z-50 bg-blue-500 hover:bg-blue-600 text-white rounded-full p-4 shadow-2xl transition-all hover:scale-110 group"
