@@ -73,59 +73,68 @@ export default function RentSection() {
           ))}
         </div>
 
-        {/* Типы бытовок для аренды */}
+        {/* Как работает аренда */}
         <div className="bg-white rounded-lg p-8 shadow-sm border border-industrial-200">
           <h3 className="text-2xl font-bold text-industrial-900 mb-6 text-center">
-            Что можно взять в аренду
+            Как работает аренда
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div className="text-center">
-              <div className="bg-industrial-50 rounded-lg p-6 mb-3">
-                <h4 className="font-bold text-industrial-900 mb-2">Бытовка утепленная</h4>
-                <p className="text-sm text-industrial-600">
-                  6×2.4м с внутренней отделкой
-                </p>
+              <div className="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-3">
+                1
               </div>
+              <h4 className="font-bold text-industrial-900 mb-2">Заявка</h4>
+              <p className="text-sm text-industrial-600">
+                Оставьте заявку или позвоните нам
+              </p>
             </div>
             <div className="text-center">
-              <div className="bg-industrial-50 rounded-lg p-6 mb-3">
-                <h4 className="font-bold text-industrial-900 mb-2">Бытовка-офис</h4>
-                <p className="text-sm text-industrial-600">
-                  С перегородкой и мебелью
-                </p>
+              <div className="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-3">
+                2
               </div>
+              <h4 className="font-bold text-industrial-900 mb-2">Расчет</h4>
+              <p className="text-sm text-industrial-600">
+                Рассчитываем стоимость аренды
+              </p>
             </div>
             <div className="text-center">
-              <div className="bg-industrial-50 rounded-lg p-6 mb-3">
-                <h4 className="font-bold text-industrial-900 mb-2">Санитарный блок</h4>
-                <p className="text-sm text-industrial-600">
-                  С душевой и туалетом
-                </p>
+              <div className="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-3">
+                3
               </div>
+              <h4 className="font-bold text-industrial-900 mb-2">Договор</h4>
+              <p className="text-sm text-industrial-600">
+                Заключаем договор аренды
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-3">
+                4
+              </div>
+              <h4 className="font-bold text-industrial-900 mb-2">Доставка</h4>
+              <p className="text-sm text-industrial-600">
+                Доставляем и устанавливаем бытовку
+              </p>
             </div>
           </div>
         </div>
 
-        {/* CTA с акцентом */}
-        <div className="mt-12 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-xl p-8 text-center">
-          <h3 className="text-2xl font-bold mb-3">
-            Первая неделя аренды со скидкой 10%
-          </h3>
-          <p className="text-primary-100 mb-6">
-            При заказе сегодня — специальные условия для новых клиентов
+        {/* CTA */}
+        <div className="mt-12 text-center">
+          <p className="text-industrial-600 mb-4">
+            Нужна консультация по аренде? Свяжитесь с нами для расчета стоимости
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#contact-form"
-              className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-10 rounded-lg inline-block transition-all shadow-xl hover:shadow-2xl transform hover:scale-105"
+              className="btn-primary inline-block"
             >
-              Арендовать со скидкой
+              Оставить заявку
             </a>
             <a
               href="tel:+79179098884"
-              className="bg-white text-industrial-900 hover:bg-industrial-100 font-bold py-4 px-10 rounded-lg inline-block transition-all shadow-xl"
+              className="btn-secondary inline-block"
             >
-              📞 +7 917 909-88-84
+              +7 917 909-88-84
             </a>
           </div>
         </div>

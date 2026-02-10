@@ -70,14 +70,11 @@ export default function ContactForm() {
         <div className="max-w-4xl mx-auto">
           {/* Заголовок */}
           <div className="text-center mb-12">
-            <div className="inline-block bg-orange-500 text-white text-sm font-bold px-4 py-2 rounded-full mb-4">
-              🎁 СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ
-            </div>
             <h2 className="text-3xl md:text-4xl font-bold text-industrial-900 mb-4">
-              Узнайте точную стоимость за 5 минут
+              Рассчитать стоимость
             </h2>
             <p className="text-lg text-industrial-600 max-w-2xl mx-auto">
-              Оставьте заявку сейчас и получите <span className="text-orange-600 font-bold">скидку 5%</span> на первый заказ
+              Оставьте заявку, и наш менеджер свяжется с вами в течение 15 минут
             </p>
           </div>
 
@@ -138,32 +135,10 @@ export default function ContactForm() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-5 px-8 rounded-lg text-xl w-full disabled:opacity-50 disabled:cursor-not-allowed shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 uppercase"
+                className="btn-primary w-full text-lg disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? 'Отправка...' : '🎁 Получить скидку 5%'}
+                {isSubmitting ? 'Отправка...' : 'Получить расчет'}
               </button>
-              
-              {/* Гарантии под кнопкой */}
-              <div className="mt-4 flex items-center justify-center gap-6 text-sm text-industrial-600">
-                <span className="flex items-center gap-1">
-                  <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  Без спама
-                </span>
-                <span className="flex items-center gap-1">
-                  <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  Ответ за 5 минут
-                </span>
-                <span className="flex items-center gap-1">
-                  <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  Бесплатный расчет
-                </span>
-              </div>
 
               {/* Статус отправки */}
               {submitStatus === 'success' && (
