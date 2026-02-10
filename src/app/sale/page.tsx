@@ -90,6 +90,135 @@ export default function SalePage() {
         </div>
       </section>
 
+      {/* Описание видов бытовок */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <h2 className="text-3xl md:text-4xl font-bold text-industrial-900 mb-12 text-center">
+            Виды бытовок для покупки
+          </h2>
+          
+          <div className="space-y-12">
+            {/* Строительные бытовки */}
+            <div className="card">
+              <h3 className="text-2xl font-bold text-industrial-900 mb-4">Строительные бытовки</h3>
+              <p className="text-industrial-600 mb-4">
+                Надежные и практичные бытовки для строительных площадок. Идеально подходят для проживания рабочих, организации офиса прораба и хранения инструментов. 
+                Изготавливаются из прочного металлического каркаса с утеплением минеральной ватой. Внутренняя отделка выполняется из ДВП или вагонки.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                <div>
+                  <h4 className="font-semibold text-industrial-900 mb-2">Стандартные размеры:</h4>
+                  <ul className="list-disc list-inside text-industrial-600 space-y-1">
+                    <li>6×2.4 метра (14.4 м²)</li>
+                    <li>7×2.4 метра (16.8 м²)</li>
+                    <li>8×2.4 метра (19.2 м²)</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-industrial-900 mb-2">Комплектация:</h4>
+                  <ul className="list-disc list-inside text-industrial-600 space-y-1">
+                    <li>Утепление 50-100мм</li>
+                    <li>Электропроводка</li>
+                    <li>Металлическая дверь</li>
+                    <li>Пластиковые окна</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Павильоны */}
+            <div className="card">
+              <h3 className="text-2xl font-bold text-industrial-900 mb-4">Торговые павильоны</h3>
+              <p className="text-industrial-600 mb-4">
+                Современные торговые павильоны для розничной торговли, киосков и точек общественного питания. 
+                Оснащаются панорамным остеклением для максимальной видимости товара. Утепленная конструкция позволяет работать круглый год.
+                Возможность установки дополнительного оборудования: кондиционер, вентиляция, витрины.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                <div>
+                  <h4 className="font-semibold text-industrial-900 mb-2">Особенности:</h4>
+                  <ul className="list-disc list-inside text-industrial-600 space-y-1">
+                    <li>Витринное остекление</li>
+                    <li>Усиленный металлокаркас</li>
+                    <li>Место для вывески</li>
+                    <li>Отделка под ключ</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-industrial-900 mb-2">Применение:</h4>
+                  <ul className="list-disc list-inside text-industrial-600 space-y-1">
+                    <li>Торговля продуктами</li>
+                    <li>Цветочные киоски</li>
+                    <li>Кафе и шашлычные</li>
+                    <li>Пункты выдачи товаров</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Модульные дома */}
+            <div className="card">
+              <h3 className="text-2xl font-bold text-industrial-900 mb-4">Модульные дома</h3>
+              <p className="text-industrial-600 mb-4">
+                Полноценные дома для круглогодичного или сезонного проживания. Современные планировки с возможностью установки санузла, кухни и всех коммуникаций.
+                Толстое утепление 100-150мм обеспечивает комфортную температуру зимой. Высокое качество отделки и современный дизайн. 
+                Быстрый монтаж за 1-2 дня.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                <div>
+                  <h4 className="font-semibold text-industrial-900 mb-2">Варианты исполнения:</h4>
+                  <ul className="list-disc list-inside text-industrial-600 space-y-1">
+                    <li>Дачные дома</li>
+                    <li>Дома для постоянного проживания</li>
+                    <li>Гостевые домики</li>
+                    <li>Модульные здания</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-industrial-900 mb-2">В комплекте:</h4>
+                  <ul className="list-disc list-inside text-industrial-600 space-y-1">
+                    <li>Полная отделка</li>
+                    <li>Сантехника</li>
+                    <li>Электрика</li>
+                    <li>Мебель (опционально)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Бани и хозблоки */}
+            <div className="card">
+              <h3 className="text-2xl font-bold text-industrial-900 mb-4">Бани и хозблоки</h3>
+              <p className="text-industrial-600 mb-4">
+                Компактные и функциональные постройки для дачи и загородного участка. Бани включают парилку и предбанник, возможна установка печи.
+                Хозблоки идеальны для хранения садового инвентаря, инструментов и заготовок. Прочная металлическая конструкция прослужит десятилетия.
+                Все постройки обработаны антисептиком и готовы к эксплуатации.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                <div>
+                  <h4 className="font-semibold text-industrial-900 mb-2">Бани:</h4>
+                  <ul className="list-disc list-inside text-industrial-600 space-y-1">
+                    <li>Парная + предбанник</li>
+                    <li>Вагонка из липы или осины</li>
+                    <li>Печь (опционально)</li>
+                    <li>Полки, лавки</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-industrial-900 mb-2">Хозблоки:</h4>
+                  <ul className="list-disc list-inside text-industrial-600 space-y-1">
+                    <li>Металлический каркас</li>
+                    <li>Двускатная крыша</li>
+                    <li>Прочные замки</li>
+                    <li>Возможность перегородок</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Преимущества покупки */}
       <section className="section-padding bg-white">
         <div className="container-custom">
