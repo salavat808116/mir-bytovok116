@@ -77,17 +77,6 @@
   }
   
   .bg-industrial-gradient {
-    @apply bg-gradient-to-br from-industrial-800 via-industrial-700 to-primary-900;
-  }
-  
-  .btn-orange {
-    background: linear-gradient(135deg, #ff6b35 0%, #f97316 100%);
-    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
-  }
-  
-  .btn-orange:hover {
-    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
-    box-shadow: 0 15px 40px rgba(255, 107, 53, 0.4);
-    transform: translateY(-2px);
+    @apply bg-gradient-to-br from-industrial-800 via-industrial-700 to-industrial-900;
   }
 }
