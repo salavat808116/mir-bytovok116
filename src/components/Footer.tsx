@@ -85,10 +85,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:info@mir-bytovok.ru"
+                  href="mailto:info@mir-bytovok116.ru"
                   className="text-industrial-300 hover:text-primary-400 transition-colors"
                 >
-                  info@mir-bytovok.ru
+                  info@mir-bytovok116.ru
                 </a>
               </li>
               <li className="text-industrial-300 text-sm">

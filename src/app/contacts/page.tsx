@@ -33,8 +33,7 @@ export default function ContactsPage() {
     {
       title: 'Email',
       items: [
-        { label: 'Общие вопросы', value: 'info@mir-bytovok.ru', link: 'mailto:info@mir-bytovok.ru' },
-        { label: 'Отдел продаж', value: 'sales@mir-bytovok.ru', link: 'mailto:sales@mir-bytovok.ru' }
+        { label: 'Email', value: 'info@mir-bytovok116.ru', link: 'mailto:info@mir-bytovok116.ru' }
       ],
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -62,25 +61,25 @@ export default function ContactsPage() {
       name: 'Отдел продаж',
       description: 'Консультации по продаже бытовок, расчет стоимости, оформление заказа',
       phone: '+7 917 909-88-84',
-      email: 'sales@mir-bytovok.ru'
+      email: 'info@mir-bytovok116.ru'
     },
     {
       name: 'Отдел аренды',
       description: 'Аренда бытовок, условия, тарифы, бронирование',
       phone: '+7 917 909-88-84',
-      email: 'rent@mir-bytovok.ru'
+      email: 'info@mir-bytovok116.ru'
     },
     {
       name: 'Производство',
       description: 'Вопросы по изготовлению, индивидуальные проекты, сроки',
       phone: '+7 917 909-88-84',
-      email: 'production@mir-bytovok.ru'
+      email: 'info@mir-bytovok116.ru'
     },
     {
       name: 'Служба доставки',
       description: 'Доставка, аренда манипулятора, установка бытовок',
       phone: '+7 917 909-88-84',
-      email: 'delivery@mir-bytovok.ru'
+      email: 'info@mir-bytovok116.ru'
     }
   ]
 
