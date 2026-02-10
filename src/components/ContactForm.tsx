@@ -69,20 +69,17 @@ export default function ContactForm() {
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
           {/* Заголовок */}
-          <div className="text-center mb-16">
-            <div className="inline-block bg-primary-100 text-primary-700 text-sm font-bold px-4 py-2 rounded-full mb-4">
-              ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-industrial-900 mb-6">
-              Оставьте заявку
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-industrial-900 mb-4">
+              Рассчитать стоимость
             </h2>
-            <p className="text-xl text-industrial-600 max-w-2xl mx-auto">
-              Свяжемся с вами в течение 5 минут и ответим на все вопросы
+            <p className="text-lg text-industrial-600 max-w-2xl mx-auto">
+              Оставьте заявку, и наш менеджер свяжется с вами в течение 15 минут
             </p>
           </div>
 
           {/* Форма */}
-          <div className="bg-gradient-to-br from-industrial-50 to-primary-50 rounded-3xl p-8 md:p-12 shadow-2xl border border-industrial-200">
+          <div className="bg-industrial-50 rounded-lg p-8 md:p-10 shadow-lg">
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Поле Имя */}
               <div>
@@ -138,9 +135,9 @@ export default function ContactForm() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="btn-orange text-white font-bold py-6 px-8 rounded-2xl text-xl w-full disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 transform hover:-translate-y-1 uppercase tracking-wide"
+                className="btn-primary w-full text-lg disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? 'Отправка...' : 'Отправить заявку'}
+                {isSubmitting ? 'Отправка...' : 'Получить расчет'}
               </button>
 
               {/* Статус отправки */}
