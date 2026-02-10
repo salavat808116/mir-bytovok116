@@ -24,12 +24,13 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Основной заголовок */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Аренда и продажа бытовок
+            Производство, продажа и аренда бытовок
           </h1>
 
           {/* Подзаголовок */}
           <p className="text-xl md:text-2xl text-industrial-100 mb-4">
-            Возьмите в аренду или купите бытовку от производителя. Доставка день в день.
+            Изготавливаем бытовки любого типа под ваши задачи. 
+            Также сдаем в аренду готовые утепленные бытовки.
           </p>
 
           {/* Преимущества - быстрый обзор */}
@@ -44,13 +45,13 @@ export default function Hero() {
               <svg className="w-5 h-5 text-accent-orange" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Гарантия качества</span>
+              <span>Аренда и продажа</span>
             </div>
             <div className="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
               <svg className="w-5 h-5 text-accent-orange" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Доставка по всей России</span>
+              <span>Доставка по России</span>
             </div>
           </div>
 
