@@ -5,6 +5,7 @@ import Stats from '@/components/Stats'
 import RentSection from '@/components/RentSection'
 import BytovkiTypes from '@/components/BytovkiTypes'
 import Services from '@/components/Services'
+import ProductCatalog from '@/components/ProductCatalog'
 import HowWeWork from '@/components/HowWeWork'
 import FAQ from '@/components/FAQ'
 import ContactForm from '@/components/ContactForm'
@@ -22,8 +23,8 @@ export default function Home() {
       {/* Элементы доверия */}
       <TrustBadges />
       
-      {/* Блок преимуществ */}
-      <Advantages />
+      {/* Каталог товаров с ценами */}
+      <ProductCatalog />
       
       {/* Счетчики достижений */}
       <Stats />
@@ -34,8 +35,8 @@ export default function Home() {
       {/* Блок с видами бытовок */}
       <BytovkiTypes />
       
-      {/* Блок услуг */}
-      <Services />
+      {/* Блок преимуществ */}
+      <Advantages />
       
       {/* Как мы работаем */}
       <HowWeWork />
