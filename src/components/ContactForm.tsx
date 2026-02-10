@@ -69,17 +69,20 @@ export default function ContactForm() {
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
           {/* Заголовок */}
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-industrial-900 mb-4">
-              Рассчитать стоимость
+          <div className="text-center mb-16">
+            <div className="inline-block bg-primary-100 text-primary-700 text-sm font-bold px-4 py-2 rounded-full mb-4">
+              ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-industrial-900 mb-6">
+              Оставьте заявку
             </h2>
-            <p className="text-lg text-industrial-600">
-              Оставьте заявку, и наш менеджер свяжется с вами в течение 15 минут
+            <p className="text-xl text-industrial-600 max-w-2xl mx-auto">
+              Свяжемся с вами в течение 5 минут и ответим на все вопросы
             </p>
           </div>
 
           {/* Форма */}
-          <div className="bg-industrial-50 rounded-2xl p-8 md:p-12 shadow-xl">
+          <div className="bg-gradient-to-br from-industrial-50 to-primary-50 rounded-3xl p-8 md:p-12 shadow-2xl border border-industrial-200">
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Поле Имя */}
               <div>
@@ -135,9 +138,9 @@ export default function ContactForm() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="btn-primary w-full text-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-5 px-8 rounded-2xl text-lg w-full disabled:opacity-50 disabled:cursor-not-allowed shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 transform hover:-translate-y-1"
               >
-                {isSubmitting ? 'Отправка...' : 'Получить расчет'}
+                {isSubmitting ? 'Отправка...' : 'Отправить заявку'}
               </button>
 
               {/* Статус отправки */}

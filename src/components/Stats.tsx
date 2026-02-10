@@ -43,26 +43,30 @@ export default function Stats() {
   ]
 
   return (
-    <section className="section-padding bg-primary-600 text-white">
-      <div className="container-custom">
+    <section className="section-padding bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white relative overflow-hidden">
+      {/* Декоративные элементы */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full filter blur-3xl opacity-5"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-500 rounded-full filter blur-3xl opacity-10"></div>
+      
+      <div className="container-custom relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="text-center"
+              className="text-center group"
             >
               {/* Иконка */}
-              <div className="flex justify-center mb-4 opacity-90">
+              <div className="flex justify-center mb-6 opacity-80 group-hover:opacity-100 transition-opacity">
                 {stat.icon}
               </div>
               
               {/* Число */}
-              <div className="text-4xl md:text-5xl font-bold mb-2">
+              <div className="text-5xl md:text-6xl font-bold mb-3 bg-gradient-to-r from-white to-primary-100 bg-clip-text text-transparent">
                 {stat.number}
               </div>
               
               {/* Описание */}
-              <div className="text-primary-100 text-sm md:text-base">
+              <div className="text-primary-50 text-sm md:text-base font-medium">
                 {stat.label}
               </div>
             </div>

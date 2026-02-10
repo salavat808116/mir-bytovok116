@@ -196,38 +196,6 @@ export default function ManipulatorPage() {
         </div>
       </section>
 
-      {/* Цены */}
-      <section className="section-padding bg-industrial-50">
-        <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-            Стоимость услуг
-          </h2>
-          <p className="text-center text-industrial-600 mb-12">
-            Прозрачное ценообразование. Итоговая стоимость зависит от объема работ и расстояния.
-          </p>
-
-          <div className="max-w-3xl mx-auto">
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-              {pricing.map((item, index) => (
-                <div
-                  key={index}
-                  className={`flex justify-between items-center p-4 ${
-                    index !== pricing.length - 1 ? 'border-b border-industrial-200' : ''
-                  }`}
-                >
-                  <span className="text-industrial-700">{item.service}</span>
-                  <span className="text-xl font-bold text-primary-600">{item.price}</span>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-6 text-center text-sm text-industrial-600">
-              * Окончательная стоимость рассчитывается индивидуально. 
-              Для точного расчета оставьте заявку или позвоните нам.
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Как заказать */}
       <section className="section-padding bg-white">

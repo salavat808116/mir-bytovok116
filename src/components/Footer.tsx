@@ -92,6 +92,9 @@ export default function Footer() {
                 </a>
               </li>
               <li className="text-industrial-300 text-sm">
+                ул. Юбилейная, 40
+              </li>
+              <li className="text-industrial-300 text-sm">
                 Работаем по всей России
               </li>
               <li className="text-industrial-300 text-sm">

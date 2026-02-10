@@ -20,12 +20,12 @@ export default function Header() {
   ]
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50 border-b border-industrial-100">
+    <header className="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-industrial-100">
       <div className="container-custom">
-        <div className="flex justify-between items-center py-3 px-4">
+        <div className="flex justify-between items-center py-4 px-4">
           {/* Логотип */}
-          <Link href="/" className="flex items-center">
-            <img src="/logo.svg" alt="Мир бытовок" className="h-10 w-auto" />
+          <Link href="/" className="flex items-center transform hover:scale-105 transition-transform">
+            <img src="/logo.svg" alt="Мир бытовок" className="h-12 w-auto" />
           </Link>
 
           {/* Навигация для десктопа */}
@@ -34,7 +34,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-industrial-700 hover:text-primary-600 transition-colors duration-200 font-medium text-sm"
+                className="text-industrial-700 hover:text-primary-600 transition-all duration-200 font-semibold text-sm relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary-600 after:transition-all after:duration-300 hover:after:w-full"
               >
                 {link.label}
               </Link>
@@ -42,16 +42,16 @@ export default function Header() {
           </nav>
 
           {/* Контактная информация и CTA */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-5">
             <a
               href="tel:+79179098884"
-              className="text-primary-600 font-bold text-base hover:text-primary-700 whitespace-nowrap"
+              className="text-primary-600 font-bold text-lg hover:text-primary-700 whitespace-nowrap transition-colors"
             >
               +7 917 909-88-84
             </a>
             <a 
               href="#contact-form"
-              className="btn-primary text-sm whitespace-nowrap px-4 py-2"
+              className="bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-semibold py-3 px-6 rounded-xl text-sm whitespace-nowrap transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               Заказать звонок
             </a>

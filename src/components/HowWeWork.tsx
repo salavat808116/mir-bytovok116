@@ -70,11 +70,14 @@ export default function HowWeWork() {
     <section className="section-padding bg-white">
       <div className="container-custom">
         {/* Заголовок секции */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-industrial-900 mb-4">
+        <div className="text-center mb-20">
+          <div className="inline-block bg-primary-100 text-primary-700 text-sm font-bold px-4 py-2 rounded-full mb-4">
+            ЭТАПЫ РАБОТЫ
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-industrial-900 mb-6">
             Как мы работаем
           </h2>
-          <p className="text-lg text-industrial-600 max-w-2xl mx-auto">
+          <p className="text-xl text-industrial-600 max-w-3xl mx-auto">
             Прозрачный процесс от заявки до установки бытовки на вашем объекте
           </p>
         </div>
@@ -87,24 +90,24 @@ export default function HowWeWork() {
               className="relative"
             >
               {/* Карточка этапа */}
-              <div className="bg-industrial-50 rounded-xl p-6 hover:shadow-xl transition-shadow h-full">
+              <div className="bg-white rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 h-full border-2 border-industrial-100 hover:border-primary-300">
                 {/* Номер этапа */}
-                <div className="absolute -top-4 -left-4 w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
+                <div className="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-primary-600 to-primary-700 text-white rounded-2xl flex items-center justify-center font-bold text-xl shadow-2xl shadow-primary-500/50">
                   {step.number}
                 </div>
 
                 {/* Иконка */}
-                <div className="text-primary-600 mb-4 mt-6">
+                <div className="text-primary-600 mb-6 mt-6">
                   {step.icon}
                 </div>
 
                 {/* Заголовок */}
-                <h3 className="text-xl font-bold text-industrial-900 mb-3">
+                <h3 className="text-xl font-bold text-industrial-900 mb-4">
                   {step.title}
                 </h3>
 
                 {/* Описание */}
-                <p className="text-industrial-600 text-sm">
+                <p className="text-industrial-600 leading-relaxed">
                   {step.description}
                 </p>
               </div>
@@ -122,16 +125,16 @@ export default function HowWeWork() {
         </div>
 
         {/* CTA блок */}
-        <div className="mt-16 text-center bg-primary-50 rounded-2xl p-8">
-          <h3 className="text-2xl font-bold text-industrial-900 mb-3">
+        <div className="mt-20 text-center bg-gradient-to-r from-primary-600 to-primary-700 rounded-3xl p-12 shadow-2xl">
+          <h3 className="text-3xl font-bold text-white mb-4">
             Готовы начать работу?
           </h3>
-          <p className="text-industrial-600 mb-6">
-            Оставьте заявку, и мы свяжемся с вами в течение 15 минут
+          <p className="text-primary-50 mb-8 text-lg">
+            Оставьте заявку, и мы свяжемся с вами в течение 5 минут
           </p>
           <a
             href="#contact-form"
-            className="btn-primary inline-block"
+            className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-10 rounded-2xl inline-block shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 transform hover:-translate-y-1"
           >
             Оставить заявку
           </a>

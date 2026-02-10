@@ -11,15 +11,20 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative bg-industrial-gradient text-white overflow-hidden">
-      {/* Фоновый паттерн */}
-      <div className="absolute inset-0 opacity-10">
+    <section className="relative bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white overflow-hidden">
+      {/* Современный фоновый паттерн */}
+      <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
+          backgroundSize: '40px 40px',
         }} />
       </div>
+      
+      {/* Декоративные gradient круги */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary-500 rounded-full filter blur-3xl opacity-20 -translate-y-1/2 translate-x-1/2"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-500 rounded-full filter blur-3xl opacity-20 translate-y-1/2 -translate-x-1/2"></div>
 
-      <div className="container-custom px-4 py-20 md:py-32 relative z-10">
+      <div className="container-custom px-4 py-24 md:py-36 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Основной заголовок */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -54,31 +59,32 @@ export default function Hero() {
           </div>
 
           {/* CTA кнопки */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
             <button
               onClick={scrollToForm}
-              className="btn-accent text-lg w-full sm:w-auto"
+              className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-5 px-10 rounded-2xl text-lg shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 transform hover:-translate-y-1 w-full sm:w-auto"
             >
-              Рассчитать стоимость
+              Оставить заявку
             </button>
             <a
               href="tel:+79179098884"
-              className="btn-secondary text-lg w-full sm:w-auto whitespace-nowrap"
+              className="bg-white/10 backdrop-blur-md hover:bg-white/20 text-white border-2 border-white/30 font-bold py-5 px-10 rounded-2xl text-lg transition-all duration-300 w-full sm:w-auto whitespace-nowrap"
             >
               +7 917 909-88-84
             </a>
           </div>
 
           {/* Быстрый контакт */}
-          <div className="mt-8">
+          <div className="mt-10 bg-white/10 backdrop-blur-md rounded-2xl p-6 inline-block">
+            <p className="text-sm text-primary-100 mb-2">Или позвоните прямо сейчас:</p>
             <a
               href="tel:+79179098884"
-              className="text-2xl md:text-3xl font-bold hover:text-primary-300 transition-colors inline-block"
+              className="text-3xl md:text-4xl font-bold hover:text-orange-300 transition-colors inline-block"
             >
               +7 917 909-88-84
             </a>
-            <p className="text-industrial-200 mt-2">
-              Звоните прямо сейчас! Работаем без выходных
+            <p className="text-primary-100 mt-2 text-sm">
+              Работаем без выходных • Ответим за 5 минут
             </p>
           </div>
         </div>

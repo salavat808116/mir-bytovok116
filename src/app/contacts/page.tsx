@@ -45,6 +45,7 @@ export default function ContactsPage() {
       title: 'Адрес',
       items: [
         { label: 'Режим работы', value: 'Пн-Пт: 8:00-20:00, Сб-Вс: 9:00-18:00' },
+        { label: 'Адрес', value: 'ул. Юбилейная, 40' },
         { label: 'Режим работы', value: 'Пн-Пт: 8:00 - 20:00, Сб-Вс: 9:00 - 18:00' }
       ],
       icon: (
@@ -92,9 +93,12 @@ export default function ContactsPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Контакты
             </h1>
-            <p className="text-xl text-industrial-100 mb-8">
+            <p className="text-xl text-industrial-100 mb-4">
               Свяжитесь с нами любым удобным способом. Мы всегда рады ответить на ваши вопросы 
               и помочь с выбором бытовки.
+            </p>
+            <p className="text-lg text-industrial-200">
+              📍 Адрес: ул. Юбилейная, 40
             </p>
           </div>
         </div>
@@ -151,51 +155,6 @@ export default function ContactsPage() {
         </div>
       </section>
 
-      {/* Отделы */}
-      <section className="section-padding bg-industrial-50">
-        <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-            Наши отделы
-          </h2>
-          <p className="text-center text-industrial-600 mb-12">
-            Свяжитесь напрямую с нужным отделом для быстрого решения вашего вопроса
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {departments.map((dept, index) => (
-              <div key={index} className="card">
-                <h3 className="text-xl font-bold text-industrial-900 mb-2">
-                  {dept.name}
-                </h3>
-                <p className="text-industrial-600 text-sm mb-4">
-                  {dept.description}
-                </p>
-                <div className="space-y-2">
-                  <a
-                    href={`tel:${dept.phone.replace(/\s/g, '')}`}
-                    className="flex items-center text-primary-600 hover:text-primary-700"
-                  >
-                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                    </svg>
-                    {dept.phone}
-                  </a>
-                  <a
-                    href={`mailto:${dept.email}`}
-                    className="flex items-center text-primary-600 hover:text-primary-700"
-                  >
-                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                    </svg>
-                    {dept.email}
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Карта (placeholder) */}
       <section className="section-padding bg-white">

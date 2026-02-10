@@ -3,7 +3,7 @@ import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Продажа бытовок – Купить бытовку от производителя | Мир бытовок',
-  description: 'Купить бытовку по выгодной цене от производителя. Большой выбор готовых решений. Рассрочка. Доставка и установка по всей России.',
+  description: 'Купить бытовку по выгодной цене от производителя. Большой выбор готовых решений. Доставка и установка по всей России.',
   keywords: 'купить бытовку, продажа бытовок, цена бытовки, бытовки в наличии, блок-контейнеры',
 }
 
@@ -60,7 +60,7 @@ export default function SalePage() {
     'Гарантия 3 года на конструкцию',
     'Доставка по России',
     'Установка манипулятором',
-    'Рассрочка 0% на 6 месяцев',
+    'Гибкие условия оплаты',
     'Возможность обмена',
     'Выкуп вашей старой бытовки'
   ]
@@ -169,30 +169,6 @@ export default function SalePage() {
         </div>
       </section>
 
-      {/* Рассрочка и кредит */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <div className="bg-gradient-to-r from-primary-600 to-primary-800 text-white rounded-2xl p-8 md:p-12">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Рассрочка 0% на 6 месяцев
-              </h2>
-              <p className="text-xl mb-8">
-                Покупайте бытовку в рассрочку без переплат. 
-                Минимум документов, быстрое оформление.
-              </p>
-              <div className="flex flex-wrap gap-4 justify-center">
-                <a href="#contact-form" className="btn-accent">
-                  Узнать условия
-                </a>
-                <a href="tel:+79179098884" className="bg-white text-primary-600 font-semibold py-3 px-6 rounded-lg hover:bg-industrial-50 transition-all">
-                  +7 917 909-88-84
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Форма заявки */}
       <ContactForm />

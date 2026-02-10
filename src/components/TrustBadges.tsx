@@ -61,27 +61,27 @@ export default function TrustBadges() {
   ]
 
   return (
-    <section className="section-padding bg-white border-y border-industrial-200">
+    <section className="section-padding bg-white">
       <div className="container-custom">
         {/* Сетка бейджей */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {badges.map((badge, index) => (
             <div
               key={index}
-              className="text-center group"
+              className="text-center group bg-gradient-to-br from-white to-industrial-50 rounded-2xl p-6 border-2 border-industrial-100 hover:border-primary-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
             >
               {/* Иконка */}
-              <div className="text-primary-600 mx-auto mb-3 group-hover:scale-110 transition-transform">
+              <div className="text-primary-600 mx-auto mb-4 group-hover:scale-110 transition-transform">
                 {badge.icon}
               </div>
               
               {/* Заголовок */}
-              <h4 className="font-bold text-industrial-900 text-sm mb-1">
+              <h4 className="font-bold text-industrial-900 text-sm mb-2 group-hover:text-primary-600 transition-colors">
                 {badge.title}
               </h4>
               
               {/* Описание */}
-              <p className="text-xs text-industrial-600">
+              <p className="text-xs text-industrial-600 leading-relaxed">
                 {badge.description}
               </p>
             </div>
