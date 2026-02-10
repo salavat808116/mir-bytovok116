@@ -61,36 +61,33 @@ export default function Advantages() {
   ]
 
   return (
-    <section className="section-padding bg-gradient-to-b from-white to-industrial-50">
+    <section className="section-padding bg-white">
       <div className="container-custom">
         {/* Заголовок секции */}
-        <div className="text-center mb-20">
-          <div className="inline-block bg-primary-100 text-primary-700 text-sm font-bold px-4 py-2 rounded-full mb-4">
-            ПРЕИМУЩЕСТВА
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-industrial-900 mb-6">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-industrial-900 mb-4">
             Почему выбирают нас
           </h2>
-          <p className="text-xl text-industrial-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-industrial-600 max-w-2xl mx-auto">
             Полный спектр услуг по производству, продаже и аренде бытовок.
             Профессиональный подход, гарантия качества и конкурентные цены.
           </p>
         </div>
 
         {/* Сетка преимуществ */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {advantages.map((advantage, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-industrial-100 hover:border-primary-300 transition-all duration-300 transform hover:-translate-y-2 group"
+              className="card group"
             >
-              <div className="text-primary-600 mb-6 group-hover:scale-110 transition-transform">
+              <div className="text-primary-600 mb-4">
                 {advantage.icon}
               </div>
-              <h3 className="text-2xl font-bold text-industrial-900 mb-4 group-hover:text-primary-600 transition-colors">
+              <h3 className="text-xl font-bold text-industrial-900 mb-3">
                 {advantage.title}
               </h3>
-              <p className="text-industrial-600 leading-relaxed">
+              <p className="text-industrial-600">
                 {advantage.description}
               </p>
             </div>

@@ -38,19 +38,19 @@
 /* Кастомные компоненты */
 @layer components {
   .btn-primary {
-    @apply bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transform;
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg;
   }
   
   .btn-secondary {
-    @apply bg-white hover:bg-industrial-50 text-primary-600 border-2 border-primary-600 font-semibold py-3 px-8 rounded-xl transition-all duration-300 hover:shadow-lg;
+    @apply bg-white hover:bg-industrial-50 text-primary-600 border-2 border-primary-600 font-semibold py-3 px-8 rounded-lg transition-colors duration-200;
   }
   
   .btn-accent {
-    @apply bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transform;
+    @apply bg-accent-orange hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg;
   }
   
   .section-padding {
-    @apply py-20 md:py-28 px-4;
+    @apply py-16 md:py-20 px-4;
   }
   
   .container-custom {
@@ -58,15 +58,15 @@
   }
   
   .card {
-    @apply bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 p-8 border border-industrial-100 hover:border-primary-200 hover:-translate-y-1 transform;
+    @apply bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-6 border border-industrial-200;
   }
   
   .input-field {
-    @apply w-full px-5 py-4 border-2 border-industrial-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-200 bg-white;
+    @apply w-full px-4 py-3 border border-industrial-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 bg-white;
   }
   
   .label-text {
-    @apply block text-sm font-semibold text-industrial-700 mb-2;
+    @apply block text-sm font-medium text-industrial-700 mb-2;
   }
 }
 

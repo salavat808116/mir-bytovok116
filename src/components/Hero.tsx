@@ -11,18 +11,14 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative bg-gradient-to-br from-primary-700 via-primary-800 to-primary-900 text-white overflow-hidden">
-      {/* Современный фоновый паттерн */}
+    <section className="relative bg-gradient-to-br from-industrial-800 to-industrial-900 text-white overflow-hidden">
+      {/* Минимальный фоновый паттерн */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
-          backgroundSize: '40px 40px',
+          backgroundImage: `linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px)`,
+          backgroundSize: '60px 60px',
         }} />
       </div>
-      
-      {/* Декоративные gradient круги */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary-500 rounded-full filter blur-3xl opacity-20 -translate-y-1/2 translate-x-1/2"></div>
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full filter blur-3xl opacity-30 translate-y-1/2 -translate-x-1/2" style={{background: 'linear-gradient(135deg, #ff6b35 0%, #f97316 100%)'}}></div>
 
       <div className="container-custom px-4 py-24 md:py-36 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -59,32 +55,31 @@ export default function Hero() {
           </div>
 
           {/* CTA кнопки */}
-          <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button
               onClick={scrollToForm}
-              className="btn-orange text-white font-bold py-6 px-12 rounded-2xl text-xl transition-all duration-300 transform hover:-translate-y-1 w-full sm:w-auto uppercase tracking-wide"
+              className="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-4 px-10 rounded-lg text-lg transition-colors duration-200 w-full sm:w-auto"
             >
               Получить расчет
             </button>
             <a
               href="tel:+79179098884"
-              className="bg-white/10 backdrop-blur-md hover:bg-white/20 text-white border-2 border-white/30 font-bold py-6 px-12 rounded-2xl text-xl transition-all duration-300 w-full sm:w-auto whitespace-nowrap"
+              className="bg-transparent hover:bg-white/10 text-white border-2 border-white font-semibold py-4 px-10 rounded-lg text-lg transition-colors duration-200 w-full sm:w-auto whitespace-nowrap"
             >
               +7 917 909-88-84
             </a>
           </div>
 
           {/* Быстрый контакт */}
-          <div className="mt-10 bg-white/10 backdrop-blur-md rounded-2xl p-6 inline-block">
-            <p className="text-sm text-primary-100 mb-2">Или позвоните прямо сейчас:</p>
+          <div className="mt-8">
             <a
               href="tel:+79179098884"
-              className="text-3xl md:text-4xl font-bold hover:text-orange-300 transition-colors inline-block"
+              className="text-2xl md:text-3xl font-semibold hover:text-primary-300 transition-colors inline-block"
             >
               +7 917 909-88-84
             </a>
-            <p className="text-primary-100 mt-2 text-sm">
-              Работаем без выходных • Ответим за 5 минут
+            <p className="text-industrial-300 mt-2">
+              Работаем без выходных
             </p>
           </div>
         </div>
