@@ -23,12 +23,12 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Основной заголовок */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Производство, продажа и аренда бытовок
+            Аренда и продажа бытовок
           </h1>
 
           {/* Подзаголовок */}
           <p className="text-xl md:text-2xl text-industrial-100 mb-4">
-            Доставка день в день. Собственное производство. Манипулятор в наличии.
+            Возьмите в аренду или купите бытовку от производителя. Доставка день в день.
           </p>
 
           {/* Преимущества - быстрый обзор */}

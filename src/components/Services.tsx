@@ -7,6 +7,24 @@ import Link from 'next/link'
 export default function Services() {
   const services = [
     {
+      title: 'Аренда бытовок',
+      description: 'Арендуйте бытовку на любой срок - от 1 месяца. Выгоднее покупки для временных проектов. Доставка, установка и вывоз включены.',
+      icon: (
+        <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        </svg>
+      ),
+      features: [
+        'Аренда от 1 месяца',
+        'Не нужно покупать',
+        'Доставка день в день',
+        'Замена при необходимости'
+      ],
+      link: '/rent',
+      ctaText: 'Условия аренды',
+      bgColor: 'bg-gradient-to-br from-accent-orange to-orange-700'
+    },
+    {
       title: 'Производство бытовок',
       description: 'Изготавливаем бытовки любой конфигурации на собственном производстве. Используем качественные материалы и современное оборудование.',
       icon: (
@@ -26,7 +44,7 @@ export default function Services() {
     },
     {
       title: 'Продажа бытовок',
-      description: 'Купите бытовку напрямую от производителя по выгодной цене. Большой выбор готовых решений и возможность заказа под ваши требования.',
+      description: 'Купите бытовку напрямую от производителя. Большой выбор готовых решений и возможность заказа под ваши требования.',
       icon: (
         <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -40,24 +58,6 @@ export default function Services() {
       ],
       link: '/sale',
       ctaText: 'Смотреть каталог',
-      bgColor: 'bg-gradient-to-br from-accent-orange to-orange-700'
-    },
-    {
-      title: 'Аренда бытовок',
-      description: 'Арендуйте бытовку на любой срок - от нескольких дней до долгосрочной аренды. Гибкие условия и быстрая доставка.',
-      icon: (
-        <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-        </svg>
-      ),
-      features: [
-        'Аренда от 1 дня',
-        'Выгодные тарифы',
-        'Доставка день в день',
-        'Обслуживание в аренде'
-      ],
-      link: '/rent',
-      ctaText: 'Условия аренды',
       bgColor: 'bg-gradient-to-br from-primary-600 to-primary-800'
     },
     {
