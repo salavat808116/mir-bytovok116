@@ -43,26 +43,36 @@ export default function Stats() {
   ]
 
   return (
-    <section className="section-padding bg-industrial-50">
+    <section className="section-padding bg-gradient-to-r from-primary-600 to-primary-700 text-white">
       <div className="container-custom">
+        {/* Заголовок */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-2">
+            Нам доверяют
+          </h2>
+          <p className="text-primary-100">
+            Цифры, которые говорят о нашем опыте
+          </p>
+        </div>
+        
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="text-center"
+              className="text-center bg-white/10 rounded-lg p-6 backdrop-blur-sm"
             >
               {/* Иконка */}
-              <div className="flex justify-center mb-4 text-primary-600">
+              <div className="flex justify-center mb-4 text-primary-200">
                 {stat.icon}
               </div>
               
               {/* Число */}
-              <div className="text-4xl md:text-5xl font-bold mb-2 text-industrial-900">
+              <div className="text-4xl md:text-5xl font-bold mb-2">
                 {stat.number}
               </div>
               
               {/* Описание */}
-              <div className="text-industrial-600 text-sm">
+              <div className="text-primary-100 text-sm">
                 {stat.label}
               </div>
             </div>

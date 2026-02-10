@@ -5,6 +5,7 @@ import Stats from '@/components/Stats'
 import RentSection from '@/components/RentSection'
 import BytovkiTypes from '@/components/BytovkiTypes'
 import Portfolio from '@/components/Portfolio'
+import Testimonials from '@/components/Testimonials'
 import Services from '@/components/Services'
 import HowWeWork from '@/components/HowWeWork'
 import FAQ from '@/components/FAQ'
@@ -34,6 +35,9 @@ export default function Home() {
       
       {/* Портфолио выполненных работ */}
       <Portfolio />
+      
+      {/* Отзывы клиентов */}
+      <Testimonials />
       
       {/* Блок преимуществ */}
       <Advantages />

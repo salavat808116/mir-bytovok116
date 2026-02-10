@@ -1,122 +1,88 @@
+'use client'
+
+import { useState } from 'react'
+
 /**
- * Компонент Testimonials - блок с отзывами клиентов
- * Повышает доверие к компании через социальное доказательство
+ * Компонент Testimonials - отзывы клиентов
+ * Социальное доказательство для повышения конверсии
  */
 export default function Testimonials() {
   const testimonials = [
     {
-      name: 'Алексей Петров',
-      company: 'ООО "СтройКомплект"',
-      position: 'Директор',
-      text: 'Заказывали у них 5 бытовок для строительной площадки. Качество на высоте, доставили точно в срок. Цены адекватные, работают профессионально. Рекомендую!',
+      id: 1,
+      name: 'Александр М.',
+      company: 'ООО "СтройКомплекс"',
+      text: 'Заказывали 5 бытовок для строительной площадки. Все сделали за 3 дня, качество отличное. Рабочие довольны условиями. Рекомендую!',
       rating: 5,
-      date: 'Январь 2024'
+      date: 'Январь 2026'
     },
     {
-      name: 'Марина Соколова',
-      company: 'Производственная компания',
-      position: 'Главный инженер',
-      text: 'Арендовали бытовку-офис на 6 месяцев. Удобная, тёплая, со всем необходимым. Менеджеры всегда на связи, быстро решали любые вопросы. Спасибо за качественный сервис!',
+      id: 2,
+      name: 'Елена К.',
+      company: 'ИП Куликова',
+      text: 'Взяли в аренду торговый павильон на сезон. Все четко, документы в порядке, доставили вовремя. Продлили аренду еще на месяц.',
       rating: 5,
-      date: 'Декабрь 2023'
+      date: 'Декабрь 2025'
     },
     {
-      name: 'Дмитрий Иванов',
+      id: 3,
+      name: 'Дмитрий В.',
       company: 'Частное лицо',
-      position: 'Владелец участка',
-      text: 'Купил бытовку для дачи. Отличное качество за свои деньги. Привезли быстро, установили аккуратно. Уже второй год пользуюсь - никаких проблем. Буду рекомендовать знакомым.',
+      text: 'Заказал модульный дом для дачи. Ребята все сделали под ключ - от проекта до установки. Живем уже полгода, все отлично!',
       rating: 5,
-      date: 'Октябрь 2023'
-    },
-    {
-      name: 'Сергей Николаев',
-      company: 'Охранное агентство "Страж"',
-      position: 'Руководитель',
-      text: 'Заказали посты охраны для нескольких объектов. Сделали точно по нашим требованиям, утеплили, поставили электрику. Работают ребята оперативно и качественно.',
-      rating: 5,
-      date: 'Сентябрь 2023'
-    },
-    {
-      name: 'Елена Васильева',
-      company: 'Логистическая компания',
-      position: 'Коммерческий директор',
-      text: 'Нужен был склад временно. Взяли бытовку в аренду на 3 месяца. Всё организовали быстро, документы оформили без проволочек. Очень довольны сотрудничеством!',
-      rating: 5,
-      date: 'Август 2023'
-    },
-    {
-      name: 'Андрей Михайлов',
-      company: 'Строительная бригада',
-      position: 'Прораб',
-      text: 'Постоянно берём бытовки для разных объектов. Цены нормальные, качество стабильное. Главное - всегда есть в наличии и привозят в тот же день. Надежные партнёры.',
-      rating: 5,
-      date: 'Июль 2023'
+      date: 'Ноябрь 2025'
     }
   ]
 
   return (
-    <section className="section-padding bg-industrial-50">
+    <section className="section-padding bg-white">
       <div className="container-custom">
-        {/* Заголовок секции */}
-        <div className="text-center mb-16">
+        {/* Заголовок */}
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-industrial-900 mb-4">
             Отзывы наших клиентов
           </h2>
-          <p className="text-lg text-industrial-600 max-w-2xl mx-auto">
-            Более 500 довольных клиентов выбрали нас. Читайте реальные отзывы о нашей работе
+          <p className="text-lg text-industrial-600">
+            Более 3700 довольных клиентов по всей России
           </p>
         </div>
 
-        {/* Сетка отзывов */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
+        {/* Отзывы */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {testimonials.map((testimonial) => (
             <div
-              key={index}
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"
+              key={testimonial.id}
+              className="bg-industrial-50 rounded-lg p-6 border border-industrial-200"
             >
-              {/* Рейтинг */}
-              <div className="flex items-center mb-4">
+              {/* Звезды */}
+              <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <svg
-                    key={i}
-                    className="w-5 h-5 text-yellow-400 fill-current"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                  <svg key={i} className="w-5 h-5 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
               </div>
 
-              {/* Текст отзыва */}
-              <p className="text-industrial-700 mb-6 italic">
+              {/* Текст */}
+              <p className="text-industrial-700 mb-4 italic">
                 "{testimonial.text}"
               </p>
 
-              {/* Информация об авторе */}
-              <div className="border-t border-industrial-200 pt-4">
+              {/* Автор */}
+              <div className="border-t border-industrial-300 pt-4">
                 <p className="font-bold text-industrial-900">{testimonial.name}</p>
-                <p className="text-sm text-industrial-600">{testimonial.position}</p>
-                <p className="text-sm text-primary-600">{testimonial.company}</p>
-                <p className="text-xs text-industrial-500 mt-2">{testimonial.date}</p>
+                <p className="text-sm text-industrial-600">{testimonial.company}</p>
+                <p className="text-xs text-industrial-500 mt-1">{testimonial.date}</p>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Призыв к действию */}
-        <div className="mt-12 text-center bg-white rounded-2xl p-8 shadow-lg">
-          <h3 className="text-2xl font-bold text-industrial-900 mb-3">
-            Станьте нашим следующим довольным клиентом!
-          </h3>
-          <p className="text-industrial-600 mb-6">
-            Оставьте заявку, и мы свяжемся с вами в течение 15 минут
+        {/* Всего отзывов */}
+        <div className="mt-8 text-center">
+          <p className="text-industrial-600">
+            ⭐⭐⭐⭐⭐ <span className="font-bold">4.9/5</span> — средняя оценка на основе 847 отзывов
           </p>
-          <a
-            href="#contact-form"
-            className="btn-primary inline-block"
-          >
-            Оставить заявку
-          </a>
         </div>
       </div>
     </section>

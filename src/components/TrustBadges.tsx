@@ -11,7 +11,7 @@ export default function TrustBadges() {
         </svg>
       ),
       title: 'Гарантия 1 год',
-      description: 'На все бытовки нашего производства'
+      description: 'Бесплатный ремонт дефектов'
     },
     {
       icon: (

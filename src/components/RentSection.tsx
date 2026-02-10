@@ -106,23 +106,26 @@ export default function RentSection() {
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="mt-12 text-center">
-          <p className="text-industrial-600 mb-4">
-            Нужна консультация по аренде? Свяжитесь с нами для расчета стоимости
+        {/* CTA с акцентом */}
+        <div className="mt-12 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-xl p-8 text-center">
+          <h3 className="text-2xl font-bold mb-3">
+            Первая неделя аренды со скидкой 10%
+          </h3>
+          <p className="text-primary-100 mb-6">
+            При заказе сегодня — специальные условия для новых клиентов
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#contact-form"
-              className="btn-primary inline-block"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-10 rounded-lg inline-block transition-all shadow-xl hover:shadow-2xl transform hover:scale-105"
             >
-              Оставить заявку
+              Арендовать со скидкой
             </a>
             <a
               href="tel:+79179098884"
-              className="btn-secondary inline-block"
+              className="bg-white text-industrial-900 hover:bg-industrial-100 font-bold py-4 px-10 rounded-lg inline-block transition-all shadow-xl"
             >
-              +7 917 909-88-84
+              📞 +7 917 909-88-84
             </a>
           </div>
         </div>

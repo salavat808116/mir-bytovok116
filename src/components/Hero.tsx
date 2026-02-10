@@ -24,14 +24,19 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Основной заголовок */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Производство, продажа и аренда бытовок
+            Бытовки от производителя за 3 дня
           </h1>
 
           {/* Подзаголовок */}
           <p className="text-xl md:text-2xl text-industrial-100 mb-4">
-            Изготавливаем бытовки любого типа под ваши задачи. 
-            Также сдаем в аренду готовые утепленные бытовки.
+            Изготовим бытовку под ваши задачи или сдадим в аренду готовую. 
+            <span className="text-primary-300 font-semibold"> Без посредников. Гарантия 1 год.</span>
           </p>
+          
+          {/* Срочность */}
+          <div className="inline-block bg-orange-500 text-white px-4 py-2 rounded-lg font-semibold mb-6">
+            🔥 При заказе сегодня — бесплатная доставка по городу
+          </div>
 
           {/* Преимущества - быстрый обзор */}
           <div className="flex flex-wrap justify-center gap-4 mb-8 text-sm md:text-base">
@@ -59,17 +64,22 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button
               onClick={scrollToForm}
-              className="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-4 px-10 rounded-lg text-lg transition-colors duration-200 w-full sm:w-auto"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-5 px-12 rounded-lg text-xl transition-all duration-200 w-full sm:w-auto shadow-xl hover:shadow-2xl transform hover:scale-105 uppercase"
             >
-              Получить расчет
+              Рассчитать стоимость
             </button>
             <a
               href="tel:+79179098884"
-              className="bg-transparent hover:bg-white/10 text-white border-2 border-white font-semibold py-4 px-10 rounded-lg text-lg transition-colors duration-200 w-full sm:w-auto whitespace-nowrap"
+              className="bg-white text-industrial-900 hover:bg-industrial-100 font-bold py-5 px-12 rounded-lg text-xl transition-all duration-200 w-full sm:w-auto whitespace-nowrap shadow-xl"
             >
-              +7 917 909-88-84
+              📞 +7 917 909-88-84
             </a>
           </div>
+          
+          {/* Гарантия под кнопками */}
+          <p className="text-sm text-industrial-200 mt-4">
+            ✓ Ответим за 5 минут  ✓ Выезд на замер бесплатно  ✓ Работаем без предоплаты
+          </p>
 
           {/* Быстрый контакт */}
           <div className="mt-8">
