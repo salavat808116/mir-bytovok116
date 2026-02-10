@@ -19,18 +19,42 @@ export default function ContactForm() {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Здесь будет интеграция с CRM или отправка на email
-    // Пока просто имитируем отправку
-    setTimeout(() => {
+    try {
+      // Отправка на email через Web3Forms
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: 'YOUR_WEB3FORMS_ACCESS_KEY', // Замените на свой ключ
+          subject: 'Новая заявка с сайта Мир Бытовок',
+          from_name: formData.name,
+          email: 'info@mir-bytovok116.ru', // Email получателя
+          phone: formData.phone,
+          message: formData.comment || 'Без комментария',
+        }),
+      })
+
+      const data = await response.json()
+
+      if (data.success) {
+        setSubmitStatus('success')
+        setFormData({ name: '', phone: '', comment: '' })
+      } else {
+        setSubmitStatus('error')
+      }
+    } catch (error) {
+      console.error('Ошибка отправки:', error)
+      setSubmitStatus('error')
+    } finally {
       setIsSubmitting(false)
-      setSubmitStatus('success')
-      setFormData({ name: '', phone: '', comment: '' })
       
       // Сброс статуса через 5 секунд
       setTimeout(() => {
         setSubmitStatus('idle')
       }, 5000)
-    }, 1500)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
