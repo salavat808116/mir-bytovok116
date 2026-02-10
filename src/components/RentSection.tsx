@@ -140,24 +140,25 @@ export default function RentSection() {
           </div>
         </div>
 
-        {/* Что входит в аренду */}
+        {/* Условия аренды */}
         <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12">
           <h3 className="text-3xl font-bold mb-8 text-center">
-            Что входит в аренду
+            Что вы получаете
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <h4 className="text-xl font-bold mb-4 flex items-center">
                 <svg className="w-6 h-6 mr-2 text-accent-orange" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                Бытовка
+                Качественные бытовки
               </h4>
               <ul className="space-y-2 text-primary-100">
                 <li>• Утепленная конструкция</li>
                 <li>• Внутренняя отделка</li>
                 <li>• Электропроводка</li>
                 <li>• Окна и двери</li>
+                <li>• В отличном состоянии</li>
               </ul>
             </div>
             <div>
@@ -165,29 +166,19 @@ export default function RentSection() {
                 <svg className="w-6 h-6 mr-2 text-accent-orange" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                Доставка
+                Сервис и поддержка
               </h4>
               <ul className="space-y-2 text-primary-100">
-                <li>• Доставка манипулятором</li>
-                <li>• Установка на площадке</li>
-                <li>• Выравнивание</li>
-                <li>• Вывоз после аренды</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-xl font-bold mb-4 flex items-center">
-                <svg className="w-6 h-6 mr-2 text-accent-orange" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-                Сервис
-              </h4>
-              <ul className="space-y-2 text-primary-100">
-                <li>• Консультация</li>
+                <li>• Консультация перед арендой</li>
+                <li>• Помощь в выборе</li>
                 <li>• Техническая поддержка</li>
                 <li>• Замена при неисправности</li>
                 <li>• Гибкие сроки аренды</li>
               </ul>
             </div>
+          </div>
+          <div className="mt-6 text-center text-primary-100">
+            <p className="text-sm">* Доставка, установка и вывоз оплачиваются отдельно</p>
           </div>
         </div>
 
