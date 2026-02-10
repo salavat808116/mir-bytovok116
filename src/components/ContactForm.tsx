@@ -138,7 +138,7 @@ export default function ContactForm() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-5 px-8 rounded-2xl text-lg w-full disabled:opacity-50 disabled:cursor-not-allowed shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 transform hover:-translate-y-1"
+                className="btn-orange text-white font-bold py-6 px-8 rounded-2xl text-xl w-full disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 transform hover:-translate-y-1 uppercase tracking-wide"
               >
                 {isSubmitting ? 'Отправка...' : 'Отправить заявку'}
               </button>

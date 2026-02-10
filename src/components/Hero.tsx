@@ -11,7 +11,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white overflow-hidden">
+    <section className="relative bg-gradient-to-br from-primary-700 via-primary-800 to-primary-900 text-white overflow-hidden">
       {/* Современный фоновый паттерн */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -22,7 +22,7 @@ export default function Hero() {
       
       {/* Декоративные gradient круги */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary-500 rounded-full filter blur-3xl opacity-20 -translate-y-1/2 translate-x-1/2"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-500 rounded-full filter blur-3xl opacity-20 translate-y-1/2 -translate-x-1/2"></div>
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full filter blur-3xl opacity-30 translate-y-1/2 -translate-x-1/2" style={{background: 'linear-gradient(135deg, #ff6b35 0%, #f97316 100%)'}}></div>
 
       <div className="container-custom px-4 py-24 md:py-36 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -62,13 +62,13 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
             <button
               onClick={scrollToForm}
-              className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-5 px-10 rounded-2xl text-lg shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 transform hover:-translate-y-1 w-full sm:w-auto"
+              className="btn-orange text-white font-bold py-6 px-12 rounded-2xl text-xl transition-all duration-300 transform hover:-translate-y-1 w-full sm:w-auto uppercase tracking-wide"
             >
-              Оставить заявку
+              Получить расчет
             </button>
             <a
               href="tel:+79179098884"
-              className="bg-white/10 backdrop-blur-md hover:bg-white/20 text-white border-2 border-white/30 font-bold py-5 px-10 rounded-2xl text-lg transition-all duration-300 w-full sm:w-auto whitespace-nowrap"
+              className="bg-white/10 backdrop-blur-md hover:bg-white/20 text-white border-2 border-white/30 font-bold py-6 px-12 rounded-2xl text-xl transition-all duration-300 w-full sm:w-auto whitespace-nowrap"
             >
               +7 917 909-88-84
             </a>

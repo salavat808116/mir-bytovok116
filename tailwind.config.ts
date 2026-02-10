@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Современная премиальная палитра
+        // Яркая современная палитра как у bitov-stroy
         primary: {
           50: '#eff6ff',
           100: '#dbeafe',
@@ -17,10 +17,10 @@ const config: Config = {
           300: '#93c5fd',
           400: '#60a5fa',
           500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
+          600: '#1e40af',
+          700: '#1e3a8a',
+          800: '#1e3a8a',
+          900: '#172554',
         },
         industrial: {
           50: '#f9fafb',
@@ -35,9 +35,10 @@ const config: Config = {
           900: '#111827',
         },
         accent: {
-          orange: '#f97316',
+          orange: '#ff6b35',
           yellow: '#fbbf24',
           green: '#10b981',
+          red: '#ef4444',
         }
       },
       fontFamily: {
