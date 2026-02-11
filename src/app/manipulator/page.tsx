@@ -64,29 +64,6 @@ export default function ManipulatorPage() {
     }
   ]
 
-  const pricing = [
-    {
-      service: 'Подача манипулятора',
-      price: 'от 3 000 ₽'
-    },
-    {
-      service: 'Работа манипулятора (1 час)',
-      price: 'от 1 500 ₽'
-    },
-    {
-      service: 'Доставка бытовки (до 50 км)',
-      price: 'от 5 000 ₽'
-    },
-    {
-      service: 'Установка бытовки на объекте',
-      price: 'от 2 000 ₽'
-    },
-    {
-      service: 'Доставка на дальние расстояния (от 50 км)',
-      price: 'от 50 ₽/км'
-    }
-  ]
-
   return (
     <div className="min-h-screen">
       {/* Hero секция */}
