@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 /**
  * Компонент BytovkiTypes - блок с видами бытовок
@@ -10,28 +11,28 @@ export default function BytovkiTypes() {
       title: 'Строительные бытовки',
       description: 'Надежные бытовки для строительных площадок. Для проживания рабочих, офиса прораба, склада инструментов',
       features: ['Утепление', 'Электричество', 'Быстрая установка', 'Доставка'],
-      image: '/bytovka-stroitelnaya.svg',
+      image: '/bytovka-stroitelnaya.jpg',
       link: '/production'
     },
     {
       title: 'Павильоны, торговые ряды',
       description: 'Торговые павильоны и киоски из блок-контейнеров. Для розничной торговли, общепита, услуг',
       features: ['Витрины', 'Утепление', 'Электрика', 'Вывеска'],
-      image: '/bytovka-pavilion.svg',
+      image: '/bytovka-pavilion.jpg',
       link: '/sale'
     },
     {
       title: 'Модульные дома',
       description: 'Комфортные модульные дома для постоянного или временного проживания. Быстровозводимые здания',
       features: ['Планировка', 'Утепление 100мм', 'Коммуникации', 'Под ключ'],
-      image: '/bytovka-modulniy-dom.svg',
+      image: '/bytovka-modulniy-dom.jpg',
       link: '/production'
     },
     {
       title: 'Бани, хозблоки',
       description: 'Модульные бани и хозяйственные блоки для дачи или частного дома. Готовые решения',
       features: ['Парилка', 'Душевая', 'Печь', 'Терраса'],
-      image: '/bytovka-banya.svg',
+      image: '/bytovka-banya.jpg',
       link: '/sale'
     },
   ]
@@ -58,11 +59,13 @@ export default function BytovkiTypes() {
               className="card group hover:shadow-2xl cursor-pointer"
             >
               {/* Изображение */}
-              <div className="mb-4 flex justify-center">
-                <img 
+              <div className="mb-4 flex justify-center relative h-48">
+                <Image 
                   src={type.image} 
                   alt={type.title}
-                  className="w-full h-48 object-contain group-hover:scale-105 transition-transform"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-contain group-hover:scale-105 transition-transform"
                 />
               </div>
 
