@@ -24,7 +24,7 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Основной заголовок */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Бытовки от производителя за 3 дня
+            Бытовки от производителя за 5 дней
           </h1>
 
           {/* Подзаголовок */}
