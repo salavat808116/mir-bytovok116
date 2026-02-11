@@ -79,28 +79,100 @@ export default function ProductionPage() {
         </div>
       </section>
 
-      {/* Преимущества производства */}
+      {/* Виды производимых бытовок */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Почему мы?
+          <h2 className="text-3xl md:text-4xl font-bold text-industrial-900 mb-8 text-center">
+            Что мы производим
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="text-5xl font-bold text-primary-600 mb-2">10+</div>
-              <p className="text-industrial-600">лет на рынке</p>
+          <p className="text-center text-industrial-600 mb-12 max-w-3xl mx-auto">
+            Собственное производство площадью 700 м². Более 15 лет на рынке. Изготовили более 3700 бытовок. 
+            Используем только качественные материалы. Срок изготовления - от 3 дней.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Строительные бытовки */}
+            <div className="card group hover:shadow-xl transition-shadow">
+              <div className="mb-6 relative h-64 rounded-lg overflow-hidden bg-industrial-50">
+                <img 
+                  src="/bytovka-stroitelnaya.jpg" 
+                  alt="Строительные бытовки"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-industrial-900 mb-4">Строительные бытовки</h3>
+              <p className="text-industrial-600 mb-4">
+                Для проживания рабочих, организации офиса прораба и хранения инструментов на стройплощадке.
+              </p>
+              <div className="space-y-2 text-sm text-industrial-600">
+                <p>• Металлокаркас из профильной трубы</p>
+                <p>• Утепление минеральной ватой 50-100мм</p>
+                <p>• Внутренняя отделка ДВП или вагонкой</p>
+                <p>• Электропроводка, розетки, освещение</p>
+              </div>
             </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-primary-600 mb-2">500+</div>
-              <p className="text-industrial-600">изготовленных бытовок</p>
+
+            {/* Торговые павильоны */}
+            <div className="card group hover:shadow-xl transition-shadow">
+              <div className="mb-6 relative h-64 rounded-lg overflow-hidden bg-industrial-50">
+                <img 
+                  src="/bytovka-pavilion.jpg" 
+                  alt="Торговые павильоны"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-industrial-900 mb-4">Торговые павильоны</h3>
+              <p className="text-industrial-600 mb-4">
+                Для организации торговых точек, киосков, пунктов выдачи товаров и общепита.
+              </p>
+              <div className="space-y-2 text-sm text-industrial-600">
+                <p>• Панорамное витринное остекление</p>
+                <p>• Усиленный металлический каркас</p>
+                <p>• Место для установки вывески</p>
+                <p>• Отделка под ключ, вся электрика</p>
+              </div>
             </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-primary-600 mb-2">100%</div>
-              <p className="text-industrial-600">контроль качества</p>
+
+            {/* Модульные дома */}
+            <div className="card group hover:shadow-xl transition-shadow">
+              <div className="mb-6 relative h-64 rounded-lg overflow-hidden bg-industrial-50">
+                <img 
+                  src="/bytovka-modulniy-dom.jpg" 
+                  alt="Модульные дома"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-industrial-900 mb-4">Модульные дома</h3>
+              <p className="text-industrial-600 mb-4">
+                Комфортные дома для круглогодичного проживания с возможностью установки всех коммуникаций.
+              </p>
+              <div className="space-y-2 text-sm text-industrial-600">
+                <p>• Толстое утепление 100-150мм</p>
+                <p>• Возможность установки санузла и кухни</p>
+                <p>• Полная внутренняя отделка</p>
+                <p>• Сантехника, электрика, мебель (опционально)</p>
+              </div>
             </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold text-primary-600 mb-2">3 года</div>
-              <p className="text-industrial-600">гарантия</p>
+
+            {/* Бани и хозблоки */}
+            <div className="card group hover:shadow-xl transition-shadow">
+              <div className="mb-6 relative h-64 rounded-lg overflow-hidden bg-industrial-50">
+                <img 
+                  src="/bytovka-banya.jpg" 
+                  alt="Бани и хозблоки"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <h3 className="text-2xl font-bold text-industrial-900 mb-4">Бани и хозблоки</h3>
+              <p className="text-industrial-600 mb-4">
+                Компактные постройки для дачи и загородного участка. Бани с парилкой, хозблоки для хранения.
+              </p>
+              <div className="space-y-2 text-sm text-industrial-600">
+                <p>• Бани: парная + предбанник, вагонка из липы/осины</p>
+                <p>• Печь в комплекте (опционально)</p>
+                <p>• Хозблоки: металлокаркас, двускатная крыша</p>
+                <p>• Прочные замки, возможность перегородок</p>
+              </div>
             </div>
           </div>
         </div>
