@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 /**
  * Компонент Portfolio - лента фотографий выполненных работ
  * Простая галерея изображений без описаний
@@ -32,12 +34,14 @@ export default function Portfolio() {
           {photos.map((photo) => (
             <div
               key={photo.id}
-              className="aspect-square bg-industrial-50 rounded-lg overflow-hidden border border-industrial-200 hover:border-primary-400 transition-colors cursor-pointer group"
+              className="aspect-square bg-industrial-50 rounded-lg overflow-hidden border border-industrial-200 hover:border-primary-400 transition-colors cursor-pointer group relative"
             >
-              <img 
+              <Image 
                 src={photo.image} 
                 alt={photo.alt}
-                className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform"
+                fill
+                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                className="object-contain p-4 group-hover:scale-105 transition-transform"
               />
             </div>
           ))}
